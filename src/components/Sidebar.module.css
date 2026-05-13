@@ -1,0 +1,145 @@
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px;
+  margin-bottom: 32px;
+}
+
+.logoIcon {
+  background-color: #3b82f6;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 16px;
+}
+
+.logoText {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menuLabel {
+  color: #475569;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 0 8px;
+  margin-bottom: 8px;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.navItem:hover {
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.navItemActive {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.navBadge {
+  margin-left: auto;
+  background-color: #1e293b;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+
+.navItemActive .navBadge {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-top: 1px solid #1e293b;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.signOut {
+  color: #ef4444;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.userAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+}
+
+.onlineDot {
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #0f172a;
+}
+
+.userName {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.userRole {
+  color: #64748b;
+  font-size: 12px;
+  margin: 0;
+}

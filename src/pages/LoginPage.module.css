@@ -1,0 +1,298 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.leftPanel {
+  width: 50%;
+  background-color: #0f172a;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoIcon {
+  background-color: #3b82f6;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.logoText {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.badge {
+  margin-top: 32px;
+  color: #94a3b8;
+  font-size: 14px;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  padding: 6px 14px;
+  display: inline-block;
+}
+
+.headline {
+  margin-top: 16px;
+}
+
+.headlineWhite {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.headlineBlue {
+  color: #3b82f6;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.subtext {
+  color: #94a3b8;
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 1.4;
+}
+
+.features {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.featureIcon {
+  color: #3b82f6;
+}
+
+.featureText {
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.testimonial {
+  margin-top: 32px;
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.testimonialText {
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.testimonialAuthor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.testimonialAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.testimonialName {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.testimonialRole {
+  color: #64748b;
+  font-size: 13px;
+  margin: 0;
+}
+
+.rightPanel {
+  width: 50%;
+  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 48px;
+}
+
+.formTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.formSubtitle {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+.infoBox {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 24px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.infoIcon {
+  color: #3b82f6;
+  font-size: 16px;
+}
+
+.infoTitle {
+  color: #1d4ed8;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.infoCredentials {
+  color: #3b82f6;
+  font-size: 13px;
+  margin: 0;
+  margin-top: 2px;
+}
+
+.inputGroup {
+  margin-top: 24px;
+}
+
+.inputGroupSecond {
+  margin-top: 16px;
+}
+
+.inputHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.forgotPassword {
+  font-size: 13px;
+  color: #3b82f6;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.checkboxLabel {
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+}
+
+.signInButton {
+  width: 100%;
+  padding: 12px;
+  margin-top: 24px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background-color: #e2e8f0;
+}
+
+.dividerText {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.socialButtons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.socialButton {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.bottomText {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.requestAccess {
+  color: #3b82f6;
+  cursor: pointer;
+  font-weight: 500;
+}
