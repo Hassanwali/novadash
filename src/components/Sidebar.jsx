@@ -1,19 +1,21 @@
+import { useNavigate } from 'react-router-dom'
 import styles from './Sidebar.module.css'
 
 const navItems = [
-  { label: 'Dashboard', active: true },
-  { label: 'Projects' },
-  { label: 'Tasks' },
-  { label: 'Team' },
-  { label: 'Messages', badge: 11 },
-  { label: 'Analytics' },
-  { label: 'Invoices', badge: 2 },
+  { label: 'Dashboard', path: '/dashboard' },
+  { label: 'Projects', path: '/projects' },
+  { label: 'Tasks', path: '/tasks' },
+  { label: 'Team', path: '/team' },
+  { label: 'Messages', path: '/messages', badge: 11 },
+  { label: 'Analytics', path: '/analytics' },
+  { label: 'Invoices', path: '/invoices', badge: 2 },
 ]
 
 function Sidebar() {
+  const navigate = useNavigate()
+
   return (
     <div className={styles.sidebar}>
-
       <div className={styles.logo}>
         <div className={styles.logoIcon}>⚡</div>
         <span className={styles.logoText}>NovaDash</span>
@@ -25,7 +27,8 @@ function Sidebar() {
         {navItems.map((item, index) => (
           <div
             key={index}
-            className={`${styles.navItem} ${item.active ? styles.navItemActive : ''}`}
+            className={`${styles.navItem} ${window.location.pathname === item.path ? styles.navItemActive : ''}`}
+            onClick={() => navigate(item.path)}
           >
             <span>{item.label}</span>
             {item.badge && (
@@ -54,7 +57,6 @@ function Sidebar() {
           <p className={styles.userRole}>Admin</p>
         </div>
       </div>
-
     </div>
   )
 }

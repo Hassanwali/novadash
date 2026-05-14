@@ -1,0 +1,94 @@
+.statsRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.statBox {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 16px 20px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.statIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #eff6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.statValue {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.statLabel {
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.filterBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    gap: 12px;
+}
+
+.filterTabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filterTab {
+    padding: 7px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    color: #64748b;
+}
+
+.filterTabActive {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border-color: #3b82f6;
+}
+
+.filterRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newProjectBtn {
+    padding: 8px 16px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
