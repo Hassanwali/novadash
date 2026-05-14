@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Sidebar from '../components/Sidebar'
-import Navbar from '../components/Navbar'
-import ProjectCard from '../components/ProjectCard'
+import Sidebar from '../../components/Sidebar/Sidebar'
+import Navbar from '../../components/Navbar/Navbar'
+import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import styles from './Projects.module.css'
 
 const projects = [

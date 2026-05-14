@@ -1,10 +1,10 @@
-import Sidebar from '../components/Sidebar'
-import Navbar from '../components/Navbar'
-import StatCard from '../components/StatCard'
-import ProjectActivityChart from '../components/charts/ProjectActivityChart'
-import TaskCompletionChart from '../components/charts/TaskCompletionChart'
-import RecentActivity from '../components/RecentActivity'
-import ActiveProjects from '../components/ActiveProjects'
+import Sidebar from '../../components/Sidebar/Sidebar'
+import Navbar from '../../components/Navbar/Navbar'
+import StatCard from '../../components/StatCard/StatCard'
+import ProjectActivityChart from '../../components/charts/ProjectActivityChart/ProjectActivityChart'
+import TaskCompletionChart from '../../components/charts/TaskCompletionChart/TaskCompletionChart'
+import RecentActivity from '../../components/RecentActivity/RecentActivity'
+import ActiveProjects from '../../components/ActiveProjects/ActiveProjects'
 
 function Dashboard() {
   return (
