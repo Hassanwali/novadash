@@ -1,0 +1,255 @@
+.timeFilterBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.timeTabs {
+  display: flex;
+  gap: 4px;
+}
+
+.timeTab {
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  color: #64748b;
+}
+
+.timeTabActive {
+  background-color: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+.filterRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.customRangeBtn {
+  padding: 7px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 13px;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.exportBtn {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.statCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+.statTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.statTitle {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+.statIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.statValue {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+}
+
+.statChange {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.positive {
+  color: #22c55e;
+}
+
+.negative {
+  color: #ef4444;
+}
+
+.changeLabel {
+  color: #94a3b8;
+}
+
+.chartCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.chartHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chartTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.chartSubtitle {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.chartLegend {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.completionList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.completionItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.completionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.completionName {
+  font-size: 13px;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.completionMeta {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.completionPercent {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.trafficLegend {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.trafficItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trafficLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.trafficDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.trafficPercent {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+}
