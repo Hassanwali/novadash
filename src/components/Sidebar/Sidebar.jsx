@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import styles from './Sidebar.module.css'
 
 const navItems = [
@@ -9,10 +9,12 @@ const navItems = [
   { label: 'Messages', path: '/messages', badge: 11 },
   { label: 'Analytics', path: '/analytics' },
   { label: 'Invoices', path: '/invoices', badge: 2 },
+  { label: 'Settings', path: '/settings' },
 ]
 
 function Sidebar() {
   const navigate = useNavigate()
+  const location = useLocation()
 
   return (
     <div className={styles.sidebar}>
@@ -27,7 +29,7 @@ function Sidebar() {
         {navItems.map((item, index) => (
           <div
             key={index}
-            className={`${styles.navItem} ${window.location.pathname === item.path ? styles.navItemActive : ''}`}
+            className={`${styles.navItem} ${location.pathname === item.path ? styles.navItemActive : ''}`}
             onClick={() => navigate(item.path)}
           >
             <span>{item.label}</span>
@@ -39,10 +41,7 @@ function Sidebar() {
       </div>
 
       <div className={styles.bottomSection}>
-        <div className={styles.navItem}>
-          <span>Settings</span>
-        </div>
-        <div className={`${styles.navItem} ${styles.signOut}`}>
+        <div className={`${styles.navItem} ${styles.signOut}`} onClick={() => navigate('/') }>
           <span>Sign Out</span>
         </div>
       </div>
